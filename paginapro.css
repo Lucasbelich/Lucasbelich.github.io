@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Proza Libre', sans-serif;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .margenInt{
+        padding: 0 50px;
+    }
+
+    .header{
+      background: url(../Imagenes/fondoTFT1.jpg);
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      flex-flow: column nowrap;
+    }   
+       .menu{
+          background: rgba(0, 0, 0, 0.275);
+           display: flex;
+           flex-flow: row nowrap;
+           height: 100px;
+           align-items: center;
+           border-bottom: 1px solid rgba(255, 255, 255, 0.275);
+       }
+            .logo{
+                flex: 5 1 auto;
+            }
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                }
+                .nav a:hover{
+                    color: #E94560;
+                }
+            .social{
+                flex: 1 1 auto;     
+                display: flex;      
+            }
+                .social a{
+                    color: #fff;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .social a:hover{
+                    color: #E94560;
+                }
+        .texto-principal{
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+                h1{
+                   font-family: 'Lora', serif;
+                   font-size: 21px;
+                   color: #fff;
+                   font-weight: 300;
+                   text-align: center;
+                   line-height: 1.6; 
+                }
+       
+
+    .section{
+      background: #1A1A2E;
+      display: flex;
+    }
+        .articulos{
+            background: #1A1A2E; 
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 30px;
+            
+        }  
+           .article{
+               flex: 1 1 100%;
+               color: rgb(157, 157, 157);
+               font-family: 'Proza Libre'; 
+               font-size: 13px;
+               letter-spacing: 1px;
+               margin: 20px 50px 0 0px;
+               flex: 1 1 40%;
+               background: rgb(13, 13, 24);
+               
+           }
+           .article img{
+               width: 100%;
+           }
+           p{
+               margin: 10px;
+           }
+           h3{
+               color: rgb(157, 157, 157);
+               font-size: 13px;
+               padding: 10px 0;
+               margin-top: -120px;
+               margin-left: 10px;
+           }
+           h2{
+               font-size: 25px;
+               text-transform: uppercase;
+               padding: 0px 0 10px 0;
+               color: rgb(157, 157, 157);
+               margin-left: 10px;
+           }
+           .navegacion{
+               background: #1A1A2E;
+               flex: 1 1 100%;
+               border-top: 1px solid rgba(255, 255, 255, 0.275);
+               display: flex;
+           }
+           
+                .navegacion a{
+                    color: #fff;
+                    text-decoration: none;
+                    padding-top: 5px;
+                
+                    
+                }
+                .navegacion a:hover{
+                    color: #E94560;
+                }
+                .in{
+                    flex: 4 1 auto;
+                    text-align: center;
+                    margin-left: -50px;
+
+                }
+                .num{
+                    flex: 1 1 auto;
+                    text-align: center;
+
+                }
+                .fin{
+                    flex: 4 1 auto;
+                    text-align: center;
+                    
+
+                }
+        .aside{
+            background: #1A1A2E;
+            flex: 1 1 auto;
+            margin-top: 50px;
+        }
+        .aside img{
+            width: 100%;
+            
+        }
+        h4{
+            font-size: 15px;
+            text-transform: uppercase;
+            padding: 20px 0 10px 0;
+            color: #e94560b1;
+            background: #121220;
+            padding: 5px;
+                    
+            
+        }
+          
+    .footer{
+      background: #121220;
+      display: flex;
+      justify-content: center;
+      margin-top: 1px;
+      
+    }
+        .pie{
+            background: #1A1A2E;
+            width: 300px; 
+            color: #fff; 
+            text-align: center;   
+            padding: 10px 0px 10px 0px;       
+        }
+@media all and (max-width: 800px) {
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    
+}      
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
