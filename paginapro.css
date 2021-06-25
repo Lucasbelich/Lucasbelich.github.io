@@ -15,7 +15,7 @@ body{
     }
 
     .header{
-      background: url(../Imagenes/fondoTFT1.jpg);
+      background: url(./public/fondoTFT1.jpg);
       background-position: center;
       background-size: cover;
       display: flex;
